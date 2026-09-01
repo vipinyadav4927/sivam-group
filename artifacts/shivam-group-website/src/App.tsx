@@ -14,7 +14,6 @@ import {
   Menu,
   MessageCircle,
   Phone,
-  Plus,
   ShieldCheck,
   Stethoscope,
   X,
@@ -23,16 +22,13 @@ import {
 const phone = '+917510016397';
 const displayPhone = '+91 7510016397';
 const email = 'Shivamgroup1942@outlook.com';
+const logoSrc = `${import.meta.env.BASE_URL}images/shivam-logo-transparent.png`;
 const whatsapp = `https://wa.me/${phone}?text=Hello%20Shivam%20Group%20of%20Enterprises%2C%20I%20would%20like%20to%20know%20more%20about%20your%20hospital%20consultancy%20services.`;
 
 function Logo() {
   return (
     <Link href="/" className="logo" data-testid="link-logo">
-      <span className="logo-mark" aria-hidden="true"><Plus size={23} strokeWidth={3} /></span>
-      <span className="logo-text">
-        <span className="logo-name">SHIVAM GROUP</span>
-        <span className="logo-sub">OF ENTERPRISES</span>
-      </span>
+      <img className="brand-logo" src={logoSrc} alt="Shivam Group of Enterprises" />
     </Link>
   );
 }
