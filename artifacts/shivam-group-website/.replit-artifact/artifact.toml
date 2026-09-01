@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Shivam Group Website"
+description = "A responsive healthcare consultancy website for Shivam Group of Enterprises, recreating the source site's public pages, navigation, services, contact flows, and visual identity."
+version = "1.0.0"
+id = "artifacts/shivam-group-website"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23721
+
+[services.development]
+run = "pnpm --filter @workspace/shivam-group-website run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/shivam-group-website", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/shivam-group-website/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23721"
+BASE_PATH = "/"
