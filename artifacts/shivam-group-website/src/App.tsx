@@ -21,6 +21,8 @@ import {
 
 const phone = '+917510016397';
 const displayPhone = '+91 7510016397';
+const additionalPhone = '+919277058619';
+const additionalDisplayPhone = '+91 92770 58619';
 const email = 'Shivamgroup1942@outlook.com';
 const address = 'Plot No-1/92, Ground Floor, Ruchi Khand-II, Sharda Nagar Yojana, Ward-Sharda Nagar, Lucknow, District Lucknow, Uttar Pradesh – 226002, India.';
 const logoSrc = `${import.meta.env.BASE_URL}images/shivam-logo-provided.png`;
@@ -116,6 +118,7 @@ function Footer() {
             <p className="footer-title">CONTACT US</p>
             <div className="contact-links">
               <a className="contact-link" href={`tel:${phone}`} data-testid="link-footer-phone"><Phone size={15} /> <span>{displayPhone}</span></a>
+              <a className="contact-link" href={`tel:${additionalPhone}`} data-testid="link-footer-additional-phone"><Phone size={15} /> <span>{additionalDisplayPhone}</span></a>
               <a className="contact-link" href={whatsapp} target="_blank" rel="noreferrer" data-testid="link-footer-whatsapp"><MessageCircle size={15} /> <span>WhatsApp: {displayPhone}</span></a>
               <a className="contact-link" href={`mailto:${email}`} data-testid="link-footer-email"><Mail size={15} /> <span>{email}</span></a>
                <span className="contact-link footer-address"><MapPin size={15} /> <span>{address}</span></span>
@@ -500,7 +503,7 @@ function Contact() {
             <h2>Let’s discuss your hospital’s requirements.</h2>
             <p>Our team is available to understand your context and guide you toward the right consultancy support.</p>
             <div className="direct-list">
-              <div className="direct-card"><Phone size={20} /><div><strong>Phone / Call</strong><a href={`tel:${phone}`} data-testid="link-contact-phone">{displayPhone}</a></div></div>
+              <div className="direct-card"><Phone size={20} /><div><strong>Phone / Call</strong><a href={`tel:${phone}`} data-testid="link-contact-phone">{displayPhone}</a><a href={`tel:${additionalPhone}`} data-testid="link-contact-additional-phone">{additionalDisplayPhone}</a></div></div>
               <div className="direct-card"><MessageCircle size={20} /><div><strong>WhatsApp Chat</strong><a href={whatsapp} target="_blank" rel="noreferrer" data-testid="link-contact-whatsapp">{displayPhone}</a></div></div>
               <div className="direct-card"><Mail size={20} /><div><strong>Email</strong><a href={`mailto:${email}`} data-testid="link-contact-email">{email}</a></div></div>
               <div className="direct-card address-card"><MapPin size={20} /><div><strong>Office Address</strong><span style={{ color: 'var(--muted)', fontSize: 14 }}>{address}</span></div></div>
