@@ -16,6 +16,8 @@ import {
   Phone,
   ShieldCheck,
   Stethoscope,
+  TrendingUp,
+  UsersRound,
   X,
 } from 'lucide-react';
 
@@ -157,9 +159,9 @@ const serviceCards = [
 ];
 
 const teamMembers = [
-  { name: 'Sumit Yadav', role: 'Deputy Director', description: 'Supports strategic planning, administration, operations, and coordination across the organization.', image: '/images/team-sumit-yadav.jpeg' },
   { name: 'Chandresh Yadav', role: 'Director', description: 'Responsible for overall leadership, strategic direction, business development, and organizational growth.', image: '/images/team-chandresh-yadav.jpeg' },
-  { name: 'Vivek Yadav', role: 'Technical Head', description: 'Leads the organization’s technical operations, technology strategy, digital systems, and technical development.', image: '/images/team-vivek-yadav.jpeg' },
+  { name: 'Vivek Yadav', role: 'Deputy Director', description: 'Supports strategic planning, administration, operations, and coordination across the organization.', image: '/images/team-vivek-yadav.jpeg' },
+  { name: 'Sumit Yadav', role: 'Technical Head', description: 'Leads the organization’s technical operations, technology strategy, digital systems, and technical development.', image: '/images/team-sumit-yadav.jpeg' },
 ] as const;
 
 function ServiceCard({ service, index }: { service: typeof serviceCards[number]; index: number }) {
@@ -202,8 +204,17 @@ function Home() {
                 <a href={whatsapp} className="button-secondary" target="_blank" rel="noreferrer" data-testid="link-hero-whatsapp"><MessageCircle size={17} /> Talk on WhatsApp</a>
               </div>
             </div>
-            <div className="hero-image-wrap reveal delay-2">
-              <img className="hero-image" src="/images/hero-hospital-interior.jpg" alt="Modern hospital reception interior" />
+            <div className="hero-visual reveal delay-2" aria-label="Shivam Group healthcare consultancy">
+              <div className="hero-visual-glow" />
+              <div className="hero-visual-frame">
+                <img className="hero-hospital-image" src={`${import.meta.env.BASE_URL}images/hero-doctor.jpg`} alt="Doctor in a white medical coat holding a stethoscope" />
+                <div className="hero-image-wash" />
+                <div className="hero-visual-line line-one" />
+                <div className="hero-visual-line line-two" />
+              </div>
+              <div className="hero-note hero-note-compliance"><ShieldCheck size={16} /><span><b>NABH Compliance</b></span></div>
+              <div className="hero-note hero-note-guidance"><UsersRound size={16} /><span><b>Trusted Support</b></span></div>
+              <div className="hero-note hero-note-quality"><TrendingUp size={16} /><span><b>Sustainable Growth</b></span></div>
             </div>
           </div>
         </section>
