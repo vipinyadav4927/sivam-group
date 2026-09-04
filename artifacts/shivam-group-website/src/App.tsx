@@ -157,8 +157,8 @@ const serviceCards = [
 ];
 
 const teamMembers = [
-  { name: 'Sumit Yadav', role: 'Director', description: 'Responsible for overall leadership, strategic direction, business development, and organizational growth.', image: '/images/team-sumit-yadav.jpeg' },
-  { name: 'Chandresh Yadav', role: 'Deputy Director', description: 'Supports strategic planning, administration, operations, and coordination across the organization.', image: '/images/team-chandresh-yadav.jpeg' },
+  { name: 'Sumit Yadav', role: 'Deputy Director', description: 'Supports strategic planning, administration, operations, and coordination across the organization.', image: '/images/team-sumit-yadav.jpeg' },
+  { name: 'Chandresh Yadav', role: 'Director', description: 'Responsible for overall leadership, strategic direction, business development, and organizational growth.', image: '/images/team-chandresh-yadav.jpeg' },
   { name: 'Vivek Yadav', role: 'Technical Head', description: 'Leads the organization’s technical operations, technology strategy, digital systems, and technical development.', image: '/images/team-vivek-yadav.jpeg' },
 ] as const;
 
@@ -203,7 +203,7 @@ function Home() {
               </div>
             </div>
             <div className="hero-image-wrap reveal delay-2">
-              <img className="hero-image" src="/images/hero-hospital.jpg" alt="Contemporary hospital building" />
+              <img className="hero-image" src="/images/hero-hospital-interior.jpg" alt="Modern hospital reception interior" />
             </div>
           </div>
         </section>
