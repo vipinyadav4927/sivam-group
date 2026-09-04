@@ -22,7 +22,8 @@ import {
 const phone = '+917510016397';
 const displayPhone = '+91 7510016397';
 const email = 'Shivamgroup1942@outlook.com';
-const logoSrc = `${import.meta.env.BASE_URL}images/shivam-logo-transparent.png`;
+const address = 'Plot No-1/92, Ground Floor, Ruchi Khand-II, Sharda Nagar Yojana, Ward-Sharda Nagar, Lucknow, District Lucknow, Uttar Pradesh – 226002, India.';
+const logoSrc = `${import.meta.env.BASE_URL}images/shivam-logo-provided.png`;
 const whatsapp = `https://wa.me/${phone}?text=Hello%20Shivam%20Group%20of%20Enterprises%2C%20I%20would%20like%20to%20know%20more%20about%20your%20hospital%20consultancy%20services.`;
 
 function Logo() {
@@ -117,7 +118,7 @@ function Footer() {
               <a className="contact-link" href={`tel:${phone}`} data-testid="link-footer-phone"><Phone size={15} /> <span>{displayPhone}</span></a>
               <a className="contact-link" href={whatsapp} target="_blank" rel="noreferrer" data-testid="link-footer-whatsapp"><MessageCircle size={15} /> <span>WhatsApp: {displayPhone}</span></a>
               <a className="contact-link" href={`mailto:${email}`} data-testid="link-footer-email"><Mail size={15} /> <span>{email}</span></a>
-              <span className="contact-link"><MapPin size={15} /> <span>Serving hospitals across India</span></span>
+               <span className="contact-link footer-address"><MapPin size={15} /> <span>{address}</span></span>
             </div>
           </div>
         </div>
@@ -155,6 +156,12 @@ const serviceCards = [
   { title: 'Hospital Setup & Operations', description: 'Guidance on how to start, set up, manage and run a hospital with practical operational workflows.', href: '/hospital-consultancy', icon: Building2 },
 ];
 
+const teamMembers = [
+  { name: 'Sumit Yadav', role: 'Director', description: 'Responsible for overall leadership, strategic direction, business development, and organizational growth.', image: '/images/team-sumit-yadav.jpeg' },
+  { name: 'Chandresh Yadav', role: 'Deputy Director', description: 'Supports strategic planning, administration, operations, and coordination across the organization.', image: '/images/team-chandresh-yadav.jpeg' },
+  { name: 'Vivek Yadav', role: 'Technical Head', description: 'Leads the organization’s technical operations, technology strategy, digital systems, and technical development.', image: '/images/team-vivek-yadav.jpeg' },
+] as const;
+
 function ServiceCard({ service, index }: { service: typeof serviceCards[number]; index: number }) {
   const Icon = service.icon;
   return (
@@ -164,6 +171,19 @@ function ServiceCard({ service, index }: { service: typeof serviceCards[number];
       <p>{service.description}</p>
       <span className="learn">Learn More <ArrowRight size={14} /></span>
     </Link>
+  );
+}
+
+function TeamCard({ member }: { member: typeof teamMembers[number] }) {
+  return (
+    <article className="team-card reveal">
+      <div className="team-photo-wrap"><img className="team-photo" src={member.image} alt={`${member.name}, ${member.role}`} /></div>
+      <div className="team-card-body">
+        <p className="team-role">{member.role}</p>
+        <h3>{member.name}</h3>
+        <p className="team-description">{member.description}</p>
+      </div>
+    </article>
   );
 }
 
@@ -267,6 +287,12 @@ function About() {
             <div className="foundation-item"><h4>Our Approach</h4><p>We take a collaborative, hands-on approach to consultancy — working closely with hospital teams to understand their specific context and delivering guidance that is actionable, clear and practically implementable.</p></div>
             <div className="foundation-item"><h4>Why Choose Us</h4><p>Our deep focus on the healthcare sector, combined with practical field knowledge, enables us to deliver consultancy that goes beyond generic advice and addresses the real challenges hospitals face daily.</p></div>
           </div>
+        </div>
+      </section>
+      <section className="section leadership-section">
+        <div className="container">
+          <div className="section-head"><div className="eyebrow">OUR LEADERSHIP</div><h2>Meet the Management Team</h2><p>Experienced leadership bringing together healthcare operations, strategy and technology to support hospitals with clarity and care.</p></div>
+          <div className="team-grid">{teamMembers.map((member) => <TeamCard key={member.name} member={member} />)}</div>
         </div>
       </section>
       <section className="cta-section"><div className="container cta-inner"><div><h2>Ready to Transform Your Hospital Operations?</h2><p>Connect with Shivam Group of Enterprises today for professional healthcare consultancy.</p></div><Link href="/contact" className="button-primary" data-testid="link-about-cta">Get Consultation <ArrowUpRight size={16} /></Link></div></section>
@@ -433,7 +459,7 @@ function Contact() {
               <div className="direct-card"><Phone size={20} /><div><strong>Phone / Call</strong><a href={`tel:${phone}`} data-testid="link-contact-phone">{displayPhone}</a></div></div>
               <div className="direct-card"><MessageCircle size={20} /><div><strong>WhatsApp Chat</strong><a href={whatsapp} target="_blank" rel="noreferrer" data-testid="link-contact-whatsapp">{displayPhone}</a></div></div>
               <div className="direct-card"><Mail size={20} /><div><strong>Email</strong><a href={`mailto:${email}`} data-testid="link-contact-email">{email}</a></div></div>
-              <div className="direct-card"><MapPin size={20} /><div><strong>Service Area</strong><span style={{ color: 'var(--muted)', fontSize: 14 }}>Hospitals and healthcare organizations across India</span></div></div>
+              <div className="direct-card address-card"><MapPin size={20} /><div><strong>Office Address</strong><span style={{ color: 'var(--muted)', fontSize: 14 }}>{address}</span></div></div>
             </div>
           </div>
           <form className="message-form" onSubmit={submit} data-testid="form-contact">
