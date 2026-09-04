@@ -356,3 +356,46 @@ body{background:var(--cream);color:var(--ink)}body:before{display:block;opacity:
   .hero,.hero-inner{min-height:auto}.hero-inner{display:flex;flex-direction:column;gap:0;align-items:stretch}.hero-copy{padding:62px 0 45px}.hero .hero-pill{font-size:11px;padding:6px 11px}.hero h1{font-size:42px;margin-top:21px}.hero-copy>p{font-size:15px}.hero-image-wrap{height:270px;margin-bottom:60px}.hero-image-wrap:before{width:330px;height:330px;right:-120px;top:-30px}
   .section{padding:73px 0}.section-head{margin-bottom:34px;text-align:left}.section-head h2{font-size:31px}.section-head p{font-size:15px}.trust-grid{grid-template-columns:1fr}.trust-card{border-right:0;border-bottom:1px solid var(--line)}.trust-card:last-child{border-bottom:0}.service-grid{grid-template-columns:1fr}.service-card{min-height:218px}.choose-layout{grid-template-columns:1fr;gap:38px}.reason-list{grid-template-columns:1fr}.cta-section{padding:57px 0}.cta-inner{display:block}.cta-inner h2{font-size:32px}.cta-actions{margin-top:26px;flex-wrap:wrap}.footer{padding:55px 0 25px}.footer-grid{grid-template-columns:1fr 1fr;gap:37px}.footer-grid>div:last-child{grid-column:auto}.footer-grid>div:first-child{grid-column:1/-1}.inner-hero{padding:63px 0 69px}.inner-hero h1{font-size:40px}.inner-hero p{font-size:15px}.article-layout,.contact-layout{grid-template-columns:1fr;gap:44px}.article-copy h2,.contact-copy h2{font-size:31px}.feature-grid{grid-template-columns:1fr}.detail-intro{text-align:left}.detail-cta{display:block;padding:27px 25px}.detail-cta .button-primary{margin-top:22px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.message-form{padding:24px 19px}.floating{right:15px;bottom:15px}.float-button{width:43px;height:43px}
 }
+
+/* Wide desktop layout and the compact horizontal brand mark. */
+.container{width:min(1380px,calc(100% - 80px))}
+.nav-inner{max-width:1380px;padding:0 40px}
+.site-header{height:84px}
+.logo{min-width:220px;height:80px}
+.brand-logo{width:210px;height:auto;max-height:64px}
+.hero-inner{min-height:610px;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:78px}
+.hero{min-height:610px}
+.hero-copy{padding:82px 0}.hero-image-wrap{height:500px}
+
+@media (max-width:1100px){
+  .container{width:min(1180px,calc(100% - 48px))}
+  .nav-inner{padding:0 24px}.logo{min-width:170px}.brand-logo{width:165px;max-height:62px}
+  .hero-inner{min-height:580px;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:36px}.hero{min-height:580px}.hero-copy{padding:70px 0}.hero-image-wrap{height:460px}
+}
+@media (max-width:900px){
+  .site-header{height:84px}.logo{height:80px}.brand-logo{width:158px;max-height:64px}.nav-links{top:84px}
+  .hero-inner{min-height:auto}.hero-image-wrap{height:390px}
+}
+@media (max-width:700px){
+  .container{width:min(100% - 36px,1180px)}
+  .site-header{height:78px}.nav-inner{padding:0 18px}.logo{min-width:0;height:74px}.brand-logo{width:151px;max-height:62px}.nav-links{top:78px}
+  .hero,.hero-inner{min-height:auto}.hero-copy{padding:62px 0 45px}.hero-image-wrap{height:270px;margin-bottom:60px}
+}
+
+/* Leadership cards, office address, and the supplied horizontal brand asset. */
+.logo{min-width:190px}.brand-logo{width:176px;height:70px;max-height:none;object-fit:contain}
+.footer-address{line-height:1.5;max-width:290px}.address-card span{display:block;line-height:1.6}
+.leadership-section{background:var(--cream)}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1120px;margin:0 auto}
+.team-card{background:var(--white);border:1px solid var(--line);border-radius:11px;overflow:hidden;box-shadow:0 12px 32px rgba(27,60,45,.08);transition:transform .24s ease,box-shadow .24s ease}
+.team-card:hover{transform:translateY(-5px);box-shadow:0 18px 38px rgba(27,60,45,.14)}
+.team-photo-wrap{height:275px;background:linear-gradient(145deg,#dcebd9,#f4f8f1);overflow:hidden}
+.team-photo{width:100%;height:100%;object-fit:cover;object-position:center 18%}
+.team-card-body{padding:21px 23px 24px}.team-role{color:var(--green-600);font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}.team-card h3{font-size:21px;margin-top:6px}.team-description{color:var(--muted);font-size:13px;line-height:1.65;margin-top:10px}
+
+@media (max-width:900px){
+  .team-grid{grid-template-columns:repeat(2,1fr);gap:16px}.team-photo-wrap{height:250px}
+}
+@media (max-width:700px){
+  .logo{min-width:0}.brand-logo{width:151px;height:68px}.team-grid{grid-template-columns:1fr;max-width:430px}.team-photo-wrap{height:285px}.team-card-body{padding:19px 20px 22px}
+}

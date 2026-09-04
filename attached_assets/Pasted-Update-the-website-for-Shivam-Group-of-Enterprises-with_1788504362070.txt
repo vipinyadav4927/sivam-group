@@ -1,0 +1,76 @@
+Update the website for **Shivam Group of Enterprises** with the following requirements:
+
+### 1. Logo
+
+* I have already provided the logo image in this conversation.
+* **Use the exact provided logo as the company's primary logo. Do not replace the logo design or create a completely different logo.**
+* If the existing logo colors do not match the website's overall color palette, create a **clean color-adjusted version of the same logo** so that it visually fits the website.
+* Keep the original logo's identity, symbol, proportions, and overall design intact.
+* Make sure the logo looks professional, sharp, modern, and consistent across desktop and mobile.
+* Use the logo in the navbar/header and other appropriate brand locations.
+
+### 2. Company Address
+
+Add the following official company address wherever appropriate, especially in the **Contact Us / Footer / Company Information** section:
+
+**Plot No-1/92, Ground Floor, Ruchi Khand-II, Sharda Nagar Yojana, Ward-Sharda Nagar, Lucknow, District Lucknow, Uttar Pradesh – 226002, India.**
+
+### 3. Management / Leadership Team
+
+Add a professional **"Our Leadership Team"** or **"Management Team"** section with three members.
+
+Use the following information:
+
+**Sumit Yadav**
+**Director**
+Responsible for overall leadership, strategic direction, business development, and organizational growth.
+
+**Chandresh Yadav**
+**Deputy Director**
+Supports strategic planning, administration, operations, and coordination across the organization.
+
+**Vivek Yadav**
+**Technical Head**
+Leads the organization's technical operations, technology strategy, digital systems, and technical development.
+
+### 4. Team Section Design
+
+Create three professional profile cards for the team members:
+
+* Name
+* Designation
+* Short professional description
+* Professional/modern visual treatment
+* Consistent card design
+* Responsive layout for desktop, tablet, and mobile
+
+Do not use fake qualifications, fake achievements, or unsupported personal information.
+
+### 5. Website Content
+
+Maintain a professional corporate identity for **Shivam Group of Enterprises**. The website should feel:
+
+* Modern
+* Trustworthy
+* Corporate
+* Premium
+* Clean
+* Professional
+
+Use the existing website's design language and adapt the logo colors, buttons, typography, cards, and accent colors so the entire website has a **consistent brand identity**.
+
+### 6. Contact/Footer
+
+Update the footer with:
+
+* Shivam Group of Enterprises
+* Official company address
+* Existing contact information already provided on the website
+* Appropriate navigation links
+* Professional copyright section
+
+Do not remove any existing important website content unless it conflicts with the above requirements.
+
+### Important
+
+**The provided logo must remain the company's main logo. Only adjust its colors/style treatment if necessary to match the website; do not replace it with a different logo concept.**
