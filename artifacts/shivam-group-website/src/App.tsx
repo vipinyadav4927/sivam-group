@@ -208,6 +208,50 @@ function Home() {
           </div>
         </section>
 
+        <section className="scheme-strip" aria-label="Healthcare consultancy areas">
+          <div className="container scheme-strip-inner">
+            <div className="scheme-item"><span className="scheme-icon"><ShieldCheck size={19} /></span><div><strong>Accreditation</strong><small>NABH readiness</small></div></div>
+            <div className="scheme-item"><span className="scheme-icon"><Landmark size={19} /></span><div><strong>Government Schemes</strong><small>Ayushman &amp; CM Fund</small></div></div>
+            <div className="scheme-item"><span className="scheme-icon"><FileCheck2 size={19} /></span><div><strong>Insurance Support</strong><small>TPA coordination</small></div></div>
+            <div className="scheme-item"><span className="scheme-icon"><Stethoscope size={19} /></span><div><strong>Hospital Operations</strong><small>Practical guidance</small></div></div>
+          </div>
+        </section>
+
+        <section className="section story-section">
+          <div className="container story-layout">
+            <div className="story-art reveal">
+              <div className="story-orbit story-orbit-one" />
+              <div className="story-orbit story-orbit-two" />
+              <div className="story-art-content">
+                <span className="story-number">01</span>
+                <strong>Better systems.<br />Better care.</strong>
+                <small>Shivam Group of Enterprises</small>
+              </div>
+              <div className="story-badge"><ShieldCheck size={18} /><span>NABH<br /><b>Process guidance</b></span></div>
+            </div>
+            <div className="story-copy reveal delay-1">
+              <div className="eyebrow">OUR APPROACH</div>
+              <h2>Healthcare operations, made clearer.</h2>
+              <p>We bring structure to the administrative side of healthcare so hospital teams can move forward with confidence, consistency and a clear plan.</p>
+              <div className="story-list">
+                <div><Check size={17} /><span><strong>Understand the context</strong>Every hospital has different goals, workflows and challenges.</span></div>
+                <div><Check size={17} /><span><strong>Build practical systems</strong>Clear documentation and processes that teams can actually implement.</span></div>
+                <div><Check size={17} /><span><strong>Keep progress moving</strong>Focused support from preparation through day-to-day operations.</span></div>
+              </div>
+              <Link href="/about" className="text-link" data-testid="link-home-story">Discover Shivam Group <ArrowUpRight size={15} /></Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="stats-section">
+          <div className="container stats-grid">
+            <div className="stat-item"><span className="stat-icon"><ShieldCheck size={18} /></span><div><strong>NABH</strong><small>Accreditation support</small></div></div>
+            <div className="stat-item"><span className="stat-icon"><Landmark size={18} /></span><div><strong>PM-JAY</strong><small>Government scheme guidance</small></div></div>
+            <div className="stat-item"><span className="stat-icon"><FileCheck2 size={18} /></span><div><strong>TPA</strong><small>Insurance coordination</small></div></div>
+            <div className="stat-item"><span className="stat-icon"><Stethoscope size={18} /></span><div><strong>360°</strong><small>Hospital consultancy</small></div></div>
+          </div>
+        </section>
+
         <section className="section trust-section">
           <div className="container">
             <div className="section-head">
